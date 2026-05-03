@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "gid://shopify/Product/7634433605805",
+    "title": "Unisex Hoodie",
+    "description": "Made to be stylish as well as comfortable, the Independent Trading Co. SS4500 personalized hooded sweatshirt delivers on all fronts. Made from an 80% - 20% cotton/polyester blend, it strikes the perfect balance between cozy and stretchy. What's more, the metal eyelets for your hoodie drawstrings add durability while the jersey-lined hood keeps you nice & warm when it’s needed. .: 80% cotton, 20 % polyester fleece with 100% cotton face (fiber content may vary for different colors).: Medium-heavy fabric (8.5 oz /yd² (280 g/m²)).: Regular fit.: Tear-away label",
+    "descriptionHtml": "<p>Made to be stylish as well as comfortable, the Independent Trading Co. SS4500 personalized hooded sweatshirt delivers on all fronts. Made from an 80% - 20% cotton/polyester blend, it strikes the perfect balance between cozy and stretchy. What's more, the metal eyelets for your hoodie drawstrings add durability while the jersey-lined hood keeps you nice &amp; warm when it’s needed. </p>\n<p>.: 80% cotton, 20</p>\n<p> % polyester fleece with 100% cotton face (fiber content may vary for different colors)<br>.: Medium-heavy fabric (8.5 oz /yd² (280 g/m²))<br>.: Regular fit<br>.: Tear-away label</p>",
+    "availableForSale": true,
+    "handle": "unisex-hoodie",
+    "productType": "Hoodie",
+    "tags": [
+      "DTG",
+      "Hoodies",
+      "Men's Clothing",
+      "Unisex",
+      "Women's Clothing"
+    ],
+    "vendor": "Printify",
+    "priceRange": {
+      "maxVariantPrice": {
+        "amount": "32.09",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "28.52",
+        "currencyCode": "CAD"
+      }
+    },
+    "compareAtPriceRange": {
+      "maxVariantPrice": {
+        "amount": "45.0",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "45.0",
+        "currencyCode": "CAD"
+      }
+    },
+    "images": [
+      {
+        "id": "gid://shopify/ProductImage/34359628497069",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+      },
+      {
+        "id": "gid://shopify/ProductImage/34359628529837",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+      }
+    ],
+    "options": [
+      {
+        "id": "gid://shopify/ProductOption/9749761556653",
+        "name": "Color",
+        "values": [
+          "Black",
+          "White"
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductOption/9749761589421",
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ]
+      }
+    ],
+    "requiresSellingPlan": false,
+    "onlineStoreUrl": "https://shop.reactivapp.com/products/unisex-hoodie",
+    "media": [
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389",
+          "id": "gid://shopify/ImageSource/26753117192365",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389",
+          "id": "gid://shopify/ImageSource/26753117225133",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/43098641498285",
+        "title": "Black / S",
+        "quantityAvailable": 0,
+        "availableForSale": false,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.96",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "19958964877259077185",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Size",
+            "value": "S"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628497069",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098641563821",
+        "title": "White / S",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.52",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "13087361905450653471",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "Size",
+            "value": "S"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628529837",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098641694893",
+        "title": "Black / M",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.96",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "11465524383921215258",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Size",
+            "value": "M"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628497069",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098641793197",
+        "title": "White / M",
+        "quantityAvailable": 0,
+        "availableForSale": false,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.52",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "31553147430976853407",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "Size",
+            "value": "M"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628529837",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098641924269",
+        "title": "Black / L",
+        "quantityAvailable": -1,
+        "availableForSale": false,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.96",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "10711112890297876409",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Size",
+            "value": "L"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628497069",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098642022573",
+        "title": "White / L",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.52",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "30496831745320736108",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "Size",
+            "value": "L"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628529837",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098642120877",
+        "title": "Black / XL",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.96",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "10157809747416057396",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Size",
+            "value": "XL"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628497069",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098642219181",
+        "title": "White / XL",
+        "quantityAvailable": -2,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "28.52",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "25284894868656185127",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "Size",
+            "value": "XL"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628529837",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098642350253",
+        "title": "Black / 2XL",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "32.09",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "12098121038071587630",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "Black"
+          },
+          {
+            "name": "Size",
+            "value": "2XL"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628497069",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/15432182594235543675_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098642448557",
+        "title": "White / 2XL",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "31.15",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "22255129543320734991",
+        "selectedOptions": [
+          {
+            "name": "Color",
+            "value": "White"
+          },
+          {
+            "name": "Size",
+            "value": "2XL"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359628529837",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/3242859021909173943_2048_1180x400.jpg?v=1713378389"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634433605805",
+          "handle": "unisex-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749761556653",
+              "name": "Color",
+              "values": [
+                "Black",
+                "White"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749761589421",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "metafields": [],
+    "collections": [
+      "all-products",
+      "sweatshirts",
+      "featured-collection",
+      "hoodies"
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/7817164947629",
+    "title": "Reactiv Hoodie",
+    "description": "Black unisex hoodie in a heavyweight jersey cotton with a slightly oversized fit. Super soft, pre-shrunk and piece dyed for the ultimate jersey. Ribbed hem & cuffs. This black hoodie features our Reactiv logo on the chest, and our signature green drawstrings. - Blacky Hoodie- Oversized fit- Green drawstrings - Loopback Jersey- Ribbed trims- Overhead hoodie 100% Cotton body.450gsm. Made in Portugal",
+    "descriptionHtml": "<p>Black unisex hoodie in a heavyweight jersey cotton with a slightly oversized fit. Super soft, pre-shrunk and piece dyed for the ultimate jersey. Ribbed hem &amp; cuffs. This black hoodie features our Reactiv logo on the chest, and our signature green drawstrings.</p>\n<p>- Blacky Hoodie<br>- Oversized fit<br>- Green drawstrings <br>- Loopback Jersey<br>- Ribbed trims<br>- Overhead hoodie</p>\n<p>100% Cotton body.<br>450gsm.</p>\n<p>Made in Portugal</p>\n<!---->",
+    "availableForSale": true,
+    "handle": "reactiv-hoodie",
+    "productType": "Hoodie",
+    "tags": [
+      "Hoodies",
+      "Unisex"
+    ],
+    "vendor": "Reactiv Merchandise Shop",
+    "priceRange": {
+      "maxVariantPrice": {
+        "amount": "50.0",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "50.0",
+        "currencyCode": "CAD"
+      }
+    },
+    "compareAtPriceRange": {
+      "maxVariantPrice": {
+        "amount": "0.0",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "0.0",
+        "currencyCode": "CAD"
+      }
+    },
+    "images": [
+      {
+        "id": "gid://shopify/ProductImage/34954408427693",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890"
+      }
+    ],
+    "options": [
+      {
+        "id": "gid://shopify/ProductOption/9969814634669",
+        "name": "Size",
+        "values": [
+          "Small",
+          "Medium",
+          "Large",
+          "XL"
+        ]
+      }
+    ],
+    "requiresSellingPlan": false,
+    "onlineStoreUrl": "https://shop.reactivapp.com/products/reactiv-hoodie",
+    "media": [
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890",
+          "id": "gid://shopify/ImageSource/27367416823981",
+          "altText": null,
+          "width": 5000,
+          "height": 5000
+        }
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/43503022538925",
+        "title": "Small",
+        "quantityAvailable": 5,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "50.0",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": null,
+        "sku": "",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "Small"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34954408427693",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7817164947629",
+          "handle": "reactiv-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9969814634669",
+              "name": "Size",
+              "values": [
+                "Small",
+                "Medium",
+                "Large",
+                "XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43503022571693",
+        "title": "Medium",
+        "quantityAvailable": 5,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "50.0",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": null,
+        "sku": "",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "Medium"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34954408427693",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7817164947629",
+          "handle": "reactiv-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9969814634669",
+              "name": "Size",
+              "values": [
+                "Small",
+                "Medium",
+                "Large",
+                "XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43503022604461",
+        "title": "Large",
+        "quantityAvailable": 5,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "50.0",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": null,
+        "sku": "",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "Large"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34954408427693",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7817164947629",
+          "handle": "reactiv-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9969814634669",
+              "name": "Size",
+              "values": [
+                "Small",
+                "Medium",
+                "Large",
+                "XL"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43503022637229",
+        "title": "XL",
+        "quantityAvailable": 5,
+        "availableForSale": false,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "50.0",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": null,
+        "sku": "",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "XL"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34954408427693",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/107112-hoodie-mockup_1180x400.png.jpg?v=1719328890"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7817164947629",
+          "handle": "reactiv-hoodie",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9969814634669",
+              "name": "Size",
+              "values": [
+                "Small",
+                "Medium",
+                "Large",
+                "XL"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "metafields": [],
+    "collections": [
+      "all-products",
+      "sweatshirts",
+      "featured-collection",
+      "hoodies"
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/7634430099629",
+    "title": "Unisex Heavy Blend™ Full Zip Hooded Sweatshirt - White",
+    "description": "The classic comfy zip-up, featuring air-jet spun yarn for a softer fleece with reduced pilling. Once put on, it will be impossible to take off. .: 50% cotton, 50% polyester.: Medium-heavy fabric (8 oz/yd² (271 g/m²)).: Classic fit.: Sewn-in label.: Runs true to size",
+    "descriptionHtml": "The classic comfy zip-up, featuring air-jet spun yarn for a softer fleece with reduced pilling. Once put on, it will be impossible to take off. <br><p>.: 50% cotton, 50% polyester<br>.: Medium-heavy fabric (8 oz/yd² (271 g/m²))<br>.: Classic fit<br>.: Sewn-in label<br>.: Runs true to size</p>",
+    "availableForSale": true,
+    "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+    "productType": "Hoodie",
+    "tags": [
+      "DTG",
+      "group:unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+      "Hoodies",
+      "Men's Clothing",
+      "Regular fit",
+      "Unisex",
+      "With zipper",
+      "Women's Clothing"
+    ],
+    "vendor": "Printify",
+    "priceRange": {
+      "maxVariantPrice": {
+        "amount": "32.97",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "25.57",
+        "currencyCode": "CAD"
+      }
+    },
+    "compareAtPriceRange": {
+      "maxVariantPrice": {
+        "amount": "49.0",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "49.0",
+        "currencyCode": "CAD"
+      }
+    },
+    "images": [
+      {
+        "id": "gid://shopify/ProductImage/34359603626157",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+      },
+      {
+        "id": "gid://shopify/ProductImage/34359603691693",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/12876771923415557174_2048_1180x400.jpg?v=1713378133"
+      }
+    ],
+    "options": [
+      {
+        "id": "gid://shopify/ProductOption/9749756674221",
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductOption/9749756739757",
+        "name": "Color",
+        "values": [
+          "White"
+        ]
+      }
+    ],
+    "requiresSellingPlan": false,
+    "onlineStoreUrl": "https://shop.reactivapp.com/products/unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+    "media": [
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133",
+          "id": "gid://shopify/ImageSource/26753092092077",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/12876771923415557174_2048_1180x400.jpg?v=1713378133",
+          "id": "gid://shopify/ImageSource/26753092190381",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/43098632356013",
+        "title": "S / White",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "25.57",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "15842234168045191282",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "S"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632388781",
+        "title": "M / White",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "25.57",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "12779519362910147054",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "M"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632421549",
+        "title": "L / White",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "25.57",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "85236495531496040901",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "L"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632454317",
+        "title": "XL / White",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "25.57",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "53555214949417549582",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "XL"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632487085",
+        "title": "2XL / White",
+        "quantityAvailable": 0,
+        "availableForSale": false,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "29.37",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "26288775356568932358",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "2XL"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632519853",
+        "title": "3XL / White",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "32.97",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "49.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "32112845715984743202",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "3XL"
+          },
+          {
+            "name": "Color",
+            "value": "White"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359603626157",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/8741742332017330275_2048_1180x400.jpg?v=1713378133"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634430099629",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756674221",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756739757",
+              "name": "Color",
+              "values": [
+                "White"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "metafields": [],
+    "collections": [
+      "all-products",
+      "sweatshirts",
+      "featured-collection",
+      "hoodies"
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/7634429935789",
+    "title": "Unisex Heavy Blend™ Full Zip Hooded Sweatshirt - Black",
+    "description": "The classic comfy zip-up, featuring air-jet spun yarn for a softer fleece with reduced pilling. Once put on, it will be impossible to take off. .: 50% cotton, 50% polyester.: Medium-heavy fabric (8 oz/yd² (271 g/m²)).: Classic fit.: Sewn-in label.: Runs true to size",
+    "descriptionHtml": "The classic comfy zip-up, featuring air-jet spun yarn for a softer fleece with reduced pilling. Once put on, it will be impossible to take off. <br><p>.: 50% cotton, 50% polyester<br>.: Medium-heavy fabric (8 oz/yd² (271 g/m²))<br>.: Classic fit<br>.: Sewn-in label<br>.: Runs true to size</p>",
+    "availableForSale": true,
+    "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+    "productType": "Hoodie",
+    "tags": [
+      "DTG",
+      "group:unisex-heavy-blend-full-zip-hooded-sweatshirt-white",
+      "Hoodies",
+      "Men's Clothing",
+      "Regular fit",
+      "Unisex",
+      "With zipper",
+      "Women's Clothing"
+    ],
+    "vendor": "Printify",
+    "priceRange": {
+      "maxVariantPrice": {
+        "amount": "36.87",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "29.46",
+        "currencyCode": "CAD"
+      }
+    },
+    "compareAtPriceRange": {
+      "maxVariantPrice": {
+        "amount": "45.0",
+        "currencyCode": "CAD"
+      },
+      "minVariantPrice": {
+        "amount": "45.0",
+        "currencyCode": "CAD"
+      }
+    },
+    "images": [
+      {
+        "id": "gid://shopify/ProductImage/34359602577581",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+      },
+      {
+        "id": "gid://shopify/ProductImage/34359602610349",
+        "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/12233527677566507873_2048_1180x400.jpg?v=1713378125"
+      }
+    ],
+    "options": [
+      {
+        "id": "gid://shopify/ProductOption/9749756444845",
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      {
+        "id": "gid://shopify/ProductOption/9749756477613",
+        "name": "Color",
+        "values": [
+          "Black"
+        ]
+      }
+    ],
+    "requiresSellingPlan": false,
+    "onlineStoreUrl": "https://shop.reactivapp.com/products/unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+    "media": [
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125",
+          "id": "gid://shopify/ImageSource/26753091076269",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "mediaContentType": "IMAGE",
+        "image": {
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/12233527677566507873_2048_1180x400.jpg?v=1713378125",
+          "id": "gid://shopify/ImageSource/26753091109037",
+          "altText": null,
+          "width": 2048,
+          "height": 2048
+        }
+      }
+    ],
+    "variants": [
+      {
+        "id": "gid://shopify/ProductVariant/43098631897261",
+        "title": "S / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "29.46",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "37870872808511418941",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "S"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098631930029",
+        "title": "M / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "29.46",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "65132766921416151001",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "M"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098631962797",
+        "title": "L / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "29.46",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "32316240729666007692",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "L"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098631995565",
+        "title": "XL / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "29.46",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "17361693012936609291",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "XL"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632028333",
+        "title": "2XL / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "33.27",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "14511643059920855831",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "2XL"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "gid://shopify/ProductVariant/43098632061101",
+        "title": "3XL / Black",
+        "quantityAvailable": 0,
+        "availableForSale": true,
+        "currentlyNotInStock": false,
+        "price": {
+          "amount": "36.87",
+          "currencyCode": "CAD"
+        },
+        "compareAtPrice": {
+          "amount": "45.0",
+          "currencyCode": "CAD"
+        },
+        "sku": "16923414301608908297",
+        "selectedOptions": [
+          {
+            "name": "Size",
+            "value": "3XL"
+          },
+          {
+            "name": "Color",
+            "value": "Black"
+          }
+        ],
+        "image": {
+          "id": "gid://shopify/ProductImage/34359602577581",
+          "url": "https://cdn.shopify.com/s/files/1/0654/2458/8973/files/17599523729211061607_2048_1180x400.jpg?v=1713378125"
+        },
+        "product": {
+          "id": "gid://shopify/Product/7634429935789",
+          "handle": "unisex-heavy-blend-full-zip-hooded-sweatshirt-black",
+          "options": [
+            {
+              "id": "gid://shopify/ProductOption/9749756444845",
+              "name": "Size",
+              "values": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+              ]
+            },
+            {
+              "id": "gid://shopify/ProductOption/9749756477613",
+              "name": "Color",
+              "values": [
+                "Black"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "metafields": [],
+    "collections": [
+      "all-products",
+      "sweatshirts",
+      "featured-collection",
+      "hoodies"
+    ]
+  }
+]

@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ReactiveShopKit
 
 @main
 struct Reactive_Shop_ClipApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Text(ReactiveShopKit.placeholder)
         }
     }
 }
