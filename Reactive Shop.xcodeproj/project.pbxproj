@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8276CC1A2FA70992006DEE67 /* Reactive Shop Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 8276CBF82FA70987006DEE67 /* Reactive Shop Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8276CC272FA70D09006DEE67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC262FA70D09006DEE67 /* README.md */; };
+		8276CC292FA70D55006DEE67 /* DECISION_LOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC282FA70D55006DEE67 /* DECISION_LOG.md */; };
+		8276CC3A2FA722FA006DEE67 /* MY_DECISIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8276CBD82FA707CB006DEE67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +28,64 @@
 			remoteGlobalIDString = 8276CBC92FA707C8006DEE67;
 			remoteInfo = "Reactive Shop";
 		};
+		8276CC072FA70991006DEE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8276CBC22FA707C8006DEE67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8276CBF72FA70987006DEE67;
+			remoteInfo = "Reactive Shop Clip";
+		};
+		8276CC112FA70991006DEE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8276CBC22FA707C8006DEE67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8276CBF72FA70987006DEE67;
+			remoteInfo = "Reactive Shop Clip";
+		};
+		8276CC182FA70992006DEE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8276CBC22FA707C8006DEE67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8276CBF72FA70987006DEE67;
+			remoteInfo = "Reactive Shop Clip";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8276CC1F2FA70992006DEE67 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				8276CC1A2FA70992006DEE67 /* Reactive Shop Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8276CBCA2FA707C8006DEE67 /* Reactive Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reactive Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8276CBD72FA707CB006DEE67 /* Reactive ShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reactive ShopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8276CBE12FA707CB006DEE67 /* Reactive ShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reactive ShopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8276CBF82FA70987006DEE67 /* Reactive Shop Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reactive Shop Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8276CC062FA70991006DEE67 /* Reactive Shop ClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reactive Shop ClipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8276CC102FA70991006DEE67 /* Reactive Shop ClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reactive Shop ClipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8276CC262FA70D09006DEE67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8276CC282FA70D55006DEE67 /* DECISION_LOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DECISION_LOG.md; sourceTree = "<group>"; };
+		8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MY_DECISIONS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8276CC1B2FA70992006DEE67 /* Exceptions for "Reactive Shop Clip" folder in "Reactive Shop Clip" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8276CBF72FA70987006DEE67 /* Reactive Shop Clip */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8276CBCC2FA707C8006DEE67 /* Reactive Shop */ = {
@@ -43,6 +101,29 @@
 		8276CBE42FA707CB006DEE67 /* Reactive ShopUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Reactive ShopUITests";
+			sourceTree = "<group>";
+		};
+		8276CBF92FA70987006DEE67 /* Reactive Shop Clip */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8276CC1B2FA70992006DEE67 /* Exceptions for "Reactive Shop Clip" folder in "Reactive Shop Clip" target */,
+			);
+			path = "Reactive Shop Clip";
+			sourceTree = "<group>";
+		};
+		8276CC092FA70991006DEE67 /* Reactive Shop ClipTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Reactive Shop ClipTests";
+			sourceTree = "<group>";
+		};
+		8276CC132FA70992006DEE67 /* Reactive Shop ClipUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Reactive Shop ClipUITests";
+			sourceTree = "<group>";
+		};
+		8276CC2A2FA71429006DEE67 /* Docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +150,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8276CBF52FA70987006DEE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC032FA70991006DEE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC0D2FA70991006DEE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8276CBC12FA707C8006DEE67 = {
 			isa = PBXGroup;
 			children = (
+				8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */,
+				8276CC262FA70D09006DEE67 /* README.md */,
+				8276CC282FA70D55006DEE67 /* DECISION_LOG.md */,
+				8276CC2A2FA71429006DEE67 /* Docs */,
 				8276CBCC2FA707C8006DEE67 /* Reactive Shop */,
 				8276CBDA2FA707CB006DEE67 /* Reactive ShopTests */,
 				8276CBE42FA707CB006DEE67 /* Reactive ShopUITests */,
+				8276CBF92FA70987006DEE67 /* Reactive Shop Clip */,
+				8276CC092FA70991006DEE67 /* Reactive Shop ClipTests */,
+				8276CC132FA70992006DEE67 /* Reactive Shop ClipUITests */,
 				8276CBCB2FA707C8006DEE67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +197,9 @@
 				8276CBCA2FA707C8006DEE67 /* Reactive Shop.app */,
 				8276CBD72FA707CB006DEE67 /* Reactive ShopTests.xctest */,
 				8276CBE12FA707CB006DEE67 /* Reactive ShopUITests.xctest */,
+				8276CBF82FA70987006DEE67 /* Reactive Shop Clip.app */,
+				8276CC062FA70991006DEE67 /* Reactive Shop ClipTests.xctest */,
+				8276CC102FA70991006DEE67 /* Reactive Shop ClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,13 +214,16 @@
 				8276CBC62FA707C8006DEE67 /* Sources */,
 				8276CBC72FA707C8006DEE67 /* Frameworks */,
 				8276CBC82FA707C8006DEE67 /* Resources */,
+				8276CC1F2FA70992006DEE67 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8276CC192FA70992006DEE67 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8276CBCC2FA707C8006DEE67 /* Reactive Shop */,
+				8276CC2A2FA71429006DEE67 /* Docs */,
 			);
 			name = "Reactive Shop";
 			packageProductDependencies = (
@@ -163,6 +278,74 @@
 			productReference = 8276CBE12FA707CB006DEE67 /* Reactive ShopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8276CBF72FA70987006DEE67 /* Reactive Shop Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8276CC1C2FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop Clip" */;
+			buildPhases = (
+				8276CBF42FA70987006DEE67 /* Sources */,
+				8276CBF52FA70987006DEE67 /* Frameworks */,
+				8276CBF62FA70987006DEE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8276CBF92FA70987006DEE67 /* Reactive Shop Clip */,
+			);
+			name = "Reactive Shop Clip";
+			packageProductDependencies = (
+			);
+			productName = "Reactive Shop Clip";
+			productReference = 8276CBF82FA70987006DEE67 /* Reactive Shop Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		8276CC052FA70991006DEE67 /* Reactive Shop ClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8276CC202FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop ClipTests" */;
+			buildPhases = (
+				8276CC022FA70991006DEE67 /* Sources */,
+				8276CC032FA70991006DEE67 /* Frameworks */,
+				8276CC042FA70991006DEE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8276CC082FA70991006DEE67 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8276CC092FA70991006DEE67 /* Reactive Shop ClipTests */,
+			);
+			name = "Reactive Shop ClipTests";
+			packageProductDependencies = (
+			);
+			productName = "Reactive Shop ClipTests";
+			productReference = 8276CC062FA70991006DEE67 /* Reactive Shop ClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8276CC0F2FA70991006DEE67 /* Reactive Shop ClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8276CC232FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop ClipUITests" */;
+			buildPhases = (
+				8276CC0C2FA70991006DEE67 /* Sources */,
+				8276CC0D2FA70991006DEE67 /* Frameworks */,
+				8276CC0E2FA70991006DEE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8276CC122FA70991006DEE67 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8276CC132FA70992006DEE67 /* Reactive Shop ClipUITests */,
+			);
+			name = "Reactive Shop ClipUITests";
+			packageProductDependencies = (
+			);
+			productName = "Reactive Shop ClipUITests";
+			productReference = 8276CC102FA70991006DEE67 /* Reactive Shop ClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +367,17 @@
 						CreatedOnToolsVersion = 26.4.1;
 						TestTargetID = 8276CBC92FA707C8006DEE67;
 					};
+					8276CBF72FA70987006DEE67 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					8276CC052FA70991006DEE67 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 8276CBF72FA70987006DEE67;
+					};
+					8276CC0F2FA70991006DEE67 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 8276CBF72FA70987006DEE67;
+					};
 				};
 			};
 			buildConfigurationList = 8276CBC52FA707C8006DEE67 /* Build configuration list for PBXProject "Reactive Shop" */;
@@ -203,6 +397,9 @@
 				8276CBC92FA707C8006DEE67 /* Reactive Shop */,
 				8276CBD62FA707CB006DEE67 /* Reactive ShopTests */,
 				8276CBE02FA707CB006DEE67 /* Reactive ShopUITests */,
+				8276CBF72FA70987006DEE67 /* Reactive Shop Clip */,
+				8276CC052FA70991006DEE67 /* Reactive Shop ClipTests */,
+				8276CC0F2FA70991006DEE67 /* Reactive Shop ClipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +409,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8276CC3A2FA722FA006DEE67 /* MY_DECISIONS.md in Resources */,
+				8276CC272FA70D09006DEE67 /* README.md in Resources */,
+				8276CC292FA70D55006DEE67 /* DECISION_LOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +423,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8276CBDF2FA707CB006DEE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CBF62FA70987006DEE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC042FA70991006DEE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC0E2FA70991006DEE67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +474,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8276CBF42FA70987006DEE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC022FA70991006DEE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8276CC0C2FA70991006DEE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +507,21 @@
 			isa = PBXTargetDependency;
 			target = 8276CBC92FA707C8006DEE67 /* Reactive Shop */;
 			targetProxy = 8276CBE22FA707CB006DEE67 /* PBXContainerItemProxy */;
+		};
+		8276CC082FA70991006DEE67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8276CBF72FA70987006DEE67 /* Reactive Shop Clip */;
+			targetProxy = 8276CC072FA70991006DEE67 /* PBXContainerItemProxy */;
+		};
+		8276CC122FA70991006DEE67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8276CBF72FA70987006DEE67 /* Reactive Shop Clip */;
+			targetProxy = 8276CC112FA70991006DEE67 /* PBXContainerItemProxy */;
+		};
+		8276CC192FA70992006DEE67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8276CBF72FA70987006DEE67 /* Reactive Shop Clip */;
+			targetProxy = 8276CC182FA70992006DEE67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -530,6 +787,154 @@
 			};
 			name = Release;
 		};
+		8276CC1D2FA70992006DEE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reactive Shop Clip/Reactive_Shop_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reactive Shop Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reactive Shop";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8276CC1E2FA70992006DEE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reactive Shop Clip/Reactive_Shop_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reactive Shop Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reactive Shop";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8276CC212FA70992006DEE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Reactive-Shop-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reactive Shop Clip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reactive Shop Clip";
+			};
+			name = Debug;
+		};
+		8276CC222FA70992006DEE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Reactive-Shop-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reactive Shop Clip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reactive Shop Clip";
+			};
+			name = Release;
+		};
+		8276CC242FA70992006DEE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Reactive-Shop-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Reactive Shop Clip";
+			};
+			name = Debug;
+		};
+		8276CC252FA70992006DEE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "myorg.Reactive-Shop.Reactive-Shop-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Reactive Shop Clip";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +970,33 @@
 			buildConfigurations = (
 				8276CBF22FA707CB006DEE67 /* Debug */,
 				8276CBF32FA707CB006DEE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8276CC1C2FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8276CC1D2FA70992006DEE67 /* Debug */,
+				8276CC1E2FA70992006DEE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8276CC202FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop ClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8276CC212FA70992006DEE67 /* Debug */,
+				8276CC222FA70992006DEE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8276CC232FA70992006DEE67 /* Build configuration list for PBXNativeTarget "Reactive Shop ClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8276CC242FA70992006DEE67 /* Debug */,
+				8276CC252FA70992006DEE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
