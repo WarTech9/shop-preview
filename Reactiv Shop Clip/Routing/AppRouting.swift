@@ -1,5 +1,6 @@
 import Foundation
 
+nonisolated
 public enum AppDestination: Hashable, Sendable {
     case catalog
     case productDetails(handle: String)

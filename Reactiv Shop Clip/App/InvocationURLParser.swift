@@ -1,7 +1,7 @@
 import Foundation
 
 /// Pure URL → AppDestination translation for App Clip invocation URLs.
-/// Strict host (`shop.reactivapp.com`), http/https only. Anything else falls back to `.catalog`.
+/// Strict host (`shop.reactivapp.com`), https only. Anything else falls back to `.catalog`.
 /// Query strings and fragments are ignored. Trailing slashes are tolerated.
 public enum InvocationURLParser {
     public static func destination(for url: URL) -> AppDestination {

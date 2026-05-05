@@ -10,7 +10,6 @@
 		8276CC1A2FA70992006DEE67 /* Reactiv Shop Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 8276CBF82FA70987006DEE67 /* Reactiv Shop Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8276CC272FA70D09006DEE67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC262FA70D09006DEE67 /* README.md */; };
 		8276CC292FA70D55006DEE67 /* DECISION_LOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC282FA70D55006DEE67 /* DECISION_LOG.md */; };
-		8276CC3A2FA722FA006DEE67 /* MY_DECISIONS.md in Resources */ = {isa = PBXBuildFile; fileRef = 8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */; };
 		8276CCF42FA987F0006DEE67 /* ReactivShopKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8276CCF32FA987F0006DEE67 /* ReactivShopKit */; };
 		8276CCF62FA98870006DEE67 /* ReactivShopKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8276CCF52FA98870006DEE67 /* ReactivShopKit */; };
 /* End PBXBuildFile section */
@@ -76,7 +75,6 @@
 		8276CC102FA70991006DEE67 /* Reactiv Shop ClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reactiv Shop ClipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8276CC262FA70D09006DEE67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8276CC282FA70D55006DEE67 /* DECISION_LOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DECISION_LOG.md; sourceTree = "<group>"; };
-		8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MY_DECISIONS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -86,13 +84,6 @@
 				Info.plist,
 			);
 			target = 8276CBF72FA70987006DEE67 /* Reactiv Shop Clip */;
-		};
-		8276CC862FA9340B006DEE67 /* Exceptions for "Docs" folder in "Reactiv Shop" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"reactiv-architecture.png",
-			);
-			target = 8276CBC92FA707C8006DEE67 /* Reactiv Shop */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -130,16 +121,8 @@
 			path = "Reactiv Shop ClipUITests";
 			sourceTree = "<group>";
 		};
-		8276CC2A2FA71429006DEE67 /* Planning */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Planning;
-			sourceTree = "<group>";
-		};
 		8276CC842FA933C6006DEE67 /* Docs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				8276CC862FA9340B006DEE67 /* Exceptions for "Docs" folder in "Reactiv Shop" target */,
-			);
 			path = Docs;
 			sourceTree = "<group>";
 		};
@@ -197,10 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				8276CC842FA933C6006DEE67 /* Docs */,
-				8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */,
 				8276CC262FA70D09006DEE67 /* README.md */,
 				8276CC282FA70D55006DEE67 /* DECISION_LOG.md */,
-				8276CC2A2FA71429006DEE67 /* Planning */,
 				8276CBCC2FA707C8006DEE67 /* Reactiv Shop */,
 				8276CBDA2FA707CB006DEE67 /* Reactiv ShopTests */,
 				8276CBE42FA707CB006DEE67 /* Reactiv ShopUITests */,
@@ -251,7 +232,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8276CBCC2FA707C8006DEE67 /* Reactiv Shop */,
-				8276CC2A2FA71429006DEE67 /* Planning */,
 				8276CC842FA933C6006DEE67 /* Docs */,
 			);
 			name = "Reactiv Shop";
@@ -443,7 +423,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8276CC3A2FA722FA006DEE67 /* MY_DECISIONS.md in Resources */,
 				8276CC272FA70D09006DEE67 /* README.md in Resources */,
 				8276CC292FA70D55006DEE67 /* DECISION_LOG.md in Resources */,
 			);

@@ -1,6 +1,7 @@
 import Testing
 import Foundation
 @testable import ReactivShopKit
+@testable import Reactiv_Shop_Clip
 
 @Suite struct InvocationURLParserTests {
 
