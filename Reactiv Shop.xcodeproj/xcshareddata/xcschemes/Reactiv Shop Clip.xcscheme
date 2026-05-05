@@ -78,7 +78,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCAppClipURL"
-            value = "https://shop.reactivapp.com/product/unisex-hoodie"
+            value = "https://shop.reactivapp.com/collections/all"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
