@@ -4,11 +4,13 @@ import ReactivShopKit
 struct CatalogGrid: View {
     let products: [Product]
 
-    private let columns = [
-        GridItem(.flexible(), spacing: 16),
-        GridItem(.flexible(), spacing: 16),
-    ]
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
+    private var columns: [GridItem] {
+       let count = dynamicTypeSize.isAccessibilitySize ? 1 : 2
+       return Array(repeating: GridItem(.flexible(), spacing: 16), count: count)
+    }
+    
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 24) {

@@ -10,7 +10,7 @@ struct CatalogTile: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(product.title)
                     .font(.subheadline.weight(.medium))
-                    .lineLimit(2)
+                    .lineLimit(3)
                     .foregroundStyle(.primary)
                 Text(product.priceRange.formatted())
                     .font(.subheadline.weight(.semibold))
