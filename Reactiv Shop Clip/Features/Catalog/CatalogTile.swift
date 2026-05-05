@@ -29,16 +29,10 @@ struct CatalogTile: View {
     }
 
     private var productImage: some View {
-        AsyncImage(url: product.images.first?.url, transaction: Transaction(animation: .easeOut(duration: 0.15))) { phase in
-            switch phase {
-            case .empty:
-                Rectangle().fill(Color(.tertiarySystemFill))
-            case .success(let image):
+        CachedAsyncImage(url: product.images.first?.url) { image in
+            if let image {
                 image.resizable().scaledToFill()
-            case .failure:
-                Rectangle().fill(Color(.tertiarySystemFill))
-                    .overlay(Image(systemName: "photo").foregroundStyle(.secondary))
-            @unknown default:
+            } else {
                 Rectangle().fill(Color(.tertiarySystemFill))
             }
         }
