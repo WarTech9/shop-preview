@@ -25,15 +25,15 @@ struct CompositionRoot {
         // and update each closure to construct the real VM with captured deps.
         let factory = AppClipScreenFactory(
             makeCatalog: {
-                AnyView(CatalogView(viewModel: CatalogViewModel(repository: repo)))
+                CatalogView(viewModel: CatalogViewModel(repository: repo))
             },
             makeDetails: { handle in
-                AnyView(ProductDetailsView(
-                           viewModel: ProductDetailsViewModel(handle: handle, repository: repo, cart: cart)
-                       ))
+                ProductDetailsView(
+                    viewModel: ProductDetailsViewModel(handle: handle, repository: repo, cart: cart)
+                )
             },
             makeCart: {
-                AnyView(CartView(viewModel: CartViewModel(cart: cart)))
+                CartView(viewModel: CartViewModel(cart: cart))
             }
         )
 

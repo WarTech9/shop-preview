@@ -99,7 +99,7 @@ struct ProductDetailsView: View {
         Button {
             try? viewModel.addToCart()
         } label: {
-            Text(buttonLabel)
+            Text(buttonLabel(product: product))
                 .font(.headline)
                 .frame(maxWidth: .infinity, minHeight: 50)
         }
@@ -109,10 +109,15 @@ struct ProductDetailsView: View {
         .padding(.vertical, 12)
         .background(.bar)
     }
-    
-    private var buttonLabel: String {
-        guard let variant = viewModel.selectedVariant else { return "Add to Cart" }
-        if !variant.isAvailable { return "Out of stock" }
-        return "Add to Cart — \(variant.price.formatted())"
+
+    private func buttonLabel(product: Product) -> String {
+        if let variant = viewModel.selectedVariant {
+            if !variant.isAvailable { return "Out of stock" }
+            return "Add to Cart — \(variant.price.formatted())"
+        }
+        if let missing = product.options.first(where: { viewModel.selection[$0.name] == nil }) {
+            return "Select \(missing.name)"
+        }
+        return "Add to Cart"
     }
 }

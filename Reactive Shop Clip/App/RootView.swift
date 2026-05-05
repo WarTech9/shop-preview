@@ -2,9 +2,9 @@ import SwiftUI
 import ReactiveShopKit
 
 struct RootView: View {
+    let factory: AppClipScreenFactory
     @Environment(AppRouter.self) private var appRouter
     @Environment(CartPresenter.self) private var presenter
-    @Environment(\.screenFactory) private var factory
 
     var body: some View {
         @Bindable var router = appRouter

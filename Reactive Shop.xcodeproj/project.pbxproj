@@ -89,6 +89,13 @@
 			);
 			target = 8276CBF72FA70987006DEE67 /* Reactive Shop Clip */;
 		};
+		8276CC862FA9340B006DEE67 /* Exceptions for "Docs" folder in "Reactive Shop" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"reactiv-architecture.png",
+			);
+			target = 8276CBC92FA707C8006DEE67 /* Reactive Shop */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -125,8 +132,16 @@
 			path = "Reactive Shop ClipUITests";
 			sourceTree = "<group>";
 		};
-		8276CC2A2FA71429006DEE67 /* Docs */ = {
+		8276CC2A2FA71429006DEE67 /* Planning */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		8276CC842FA933C6006DEE67 /* Docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8276CC862FA9340B006DEE67 /* Exceptions for "Docs" folder in "Reactive Shop" target */,
+			);
 			path = Docs;
 			sourceTree = "<group>";
 		};
@@ -185,10 +200,11 @@
 		8276CBC12FA707C8006DEE67 = {
 			isa = PBXGroup;
 			children = (
+				8276CC842FA933C6006DEE67 /* Docs */,
 				8276CC392FA722FA006DEE67 /* MY_DECISIONS.md */,
 				8276CC262FA70D09006DEE67 /* README.md */,
 				8276CC282FA70D55006DEE67 /* DECISION_LOG.md */,
-				8276CC2A2FA71429006DEE67 /* Docs */,
+				8276CC2A2FA71429006DEE67 /* Planning */,
 				8276CBCC2FA707C8006DEE67 /* Reactive Shop */,
 				8276CBDA2FA707CB006DEE67 /* Reactive ShopTests */,
 				8276CBE42FA707CB006DEE67 /* Reactive ShopUITests */,
@@ -239,7 +255,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8276CBCC2FA707C8006DEE67 /* Reactive Shop */,
-				8276CC2A2FA71429006DEE67 /* Docs */,
+				8276CC2A2FA71429006DEE67 /* Planning */,
+				8276CC842FA933C6006DEE67 /* Docs */,
 			);
 			name = "Reactive Shop";
 			packageProductDependencies = (
@@ -682,6 +699,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -713,6 +731,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -828,6 +847,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -863,6 +883,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

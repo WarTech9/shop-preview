@@ -1,10 +1,3 @@
-//
-//  Reactive_Shop_ClipUITests.swift
-//  Reactive Shop ClipUITests
-//
-//  Created by John Warmann on 2026-05-03.
-//
-
 import XCTest
 
 final class Reactive_Shop_ClipUITests: XCTestCase {

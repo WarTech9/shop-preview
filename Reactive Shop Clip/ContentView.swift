@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Reactive Shop Clip
-//
-//  Created by John Warmann on 2026-05-03.
-//
-
 import SwiftUI
 
 struct ContentView: View {

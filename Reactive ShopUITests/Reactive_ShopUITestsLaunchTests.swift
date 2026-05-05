@@ -1,10 +1,3 @@
-//
-//  Reactive_ShopUITestsLaunchTests.swift
-//  Reactive ShopUITests
-//
-//  Created by John Warmann on 2026-05-03.
-//
-
 import XCTest
 
 final class Reactive_ShopUITestsLaunchTests: XCTestCase {

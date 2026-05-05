@@ -1,10 +1,3 @@
-//
-//  Reactive_ShopTests.swift
-//  Reactive ShopTests
-//
-//  Created by John Warmann on 2026-05-03.
-//
-
 import Testing
 @testable import Reactive_Shop
 

@@ -29,7 +29,7 @@ struct CatalogView: View {
                 }
             }
         }
-        .navigationTitle("Reactive Shop")
+        .navigationTitle("Reactiv Shop")
         .task {
             await  viewModel.load()
         }

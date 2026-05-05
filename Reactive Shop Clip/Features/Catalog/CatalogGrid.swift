@@ -23,5 +23,6 @@ struct CatalogGrid: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 16)
         }
+        .background(Color(.systemGroupedBackground))
     }
 }

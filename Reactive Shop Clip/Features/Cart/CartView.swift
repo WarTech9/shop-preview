@@ -28,6 +28,8 @@ struct CartView: View {
                         }
                     }
                     .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
+                    .background(Color(.systemGroupedBackground))
                     .safeAreaInset(edge: .bottom) {
                         CartTotalsFooter(
                             itemCount: viewModel.itemCount,
