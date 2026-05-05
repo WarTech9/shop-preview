@@ -1,4 +1,4 @@
-# Reactiv Shop — App Clip
+# Reactiv Shop Product Preview
 
 A SwiftUI App Clip that loads a Shopify-style product feed, lets you browse, view details, pick a variant, and add it to a local cart.
 
@@ -7,7 +7,7 @@ A SwiftUI App Clip that loads a Shopify-style product feed, lets you browse, vie
 Requires **Xcode 26** and an iPhone or simulator running iOS 17+.
 
 ```sh
-git clone <repo-url>
+git clone https://github.com/WarTech9/shop-preview
 cd "Reactiv Shop"
 open "Reactiv Shop.xcodeproj"
 ```
@@ -64,11 +64,11 @@ same package without rework.
 
 The package is organized into four layers, each with a single responsibility:
 
-- **Domain** — value types (`Product`, `Variant`, `Money`, `Cart`, …). Foundation only.
-- **Repositories** — `ProductsRepository` protocol and its `RemoteProductsRepository`
+- **Domain**: value types (`Product`, `Variant`, `Money`, `Cart`, …). Foundation only.
+- **Repositories**: `ProductsRepository` protocol and its `RemoteProductsRepository`
   actor implementation. Returns Domain types; depends on Data for raw bytes.
-- **Data** — `HTTPClient`, DTOs, and JSON mapping. Owns the wire format.
-- **Services** — `CartStore` (in-memory cart state). No SwiftUI.
+- **Data**: `HTTPClient`, DTOs, and JSON mapping. Owns the wire format.
+- **Services**: `CartStore` (in-memory cart state). No SwiftUI.
 
 The App Clip target holds everything UI-shaped: views, view models, navigation
 (`AppRouter`), the cart sheet trigger (`CartPresenter`), URL invocation handling
@@ -89,6 +89,6 @@ repository / store interfaces.
 The brief explicitly reserves extension work for the live session, so the Clip is intentionally minimal:
 
 - No checkout, payments, or post-cart flow.
-- No persistence — cart is in-memory and clears on Clip dismissal.
+- No persistence. Cart is in-memory and clears on Clip dismissal.
 - Main app target is a placeholder; all functionality lives in the Clip.
 - Currency conversion is not handled; the cart enforces single-currency via `CartError.currencyMismatch`.
