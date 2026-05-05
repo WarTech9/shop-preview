@@ -20,3 +20,4 @@ Packages/*/.build/
 
 # Project-local
 Instructions.pdf
+*.swp

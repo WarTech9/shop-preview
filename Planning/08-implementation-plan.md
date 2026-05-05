@@ -117,10 +117,15 @@ Tests:
 - `ScreenFactory` struct of closures.
 - `CompositionRoot.makeRoot()` — builds `URLSessionHTTPClient`, `RemoteProductsRepository`, `CartStore`, `Router`, `ScreenFactory`, returns a `RootView` with `.environment` for the three keys.
 - `RootView` — `NavigationStack`, switches on `router.route` to push `ProductDetailsView` for `.product(handle:)`, otherwise shows `CatalogView`. A toolbar cart button calls `factory.makeCart()`.
+- **Feed URL wiring (deferred from Step 3):**
+  - Add a small helper inside the package (e.g. `App/Configuration.swift`) that reads `Bundle.main.object(forInfoDictionaryKey: "ProductFeedURL") as? String`, converts to `URL`, and `preconditionFailure`s with a clear message if missing/malformed (config bug, not a runtime error).
+  - In Xcode, on **both** `Reactive Shop` and `Reactive Shop Clip` targets, add a build setting `INFOPLIST_KEY_ProductFeedURL` set to the pinned gist URL: `https://gist.githubusercontent.com/tsopin/22b7b6b32cef24dbf3dd98ffcfb63b1a/raw/6f379a4730ceb3c625afbcb0427ca9db7f7f3b8b/testProducts.json`. Xcode 13+ auto-merges `INFOPLIST_KEY_*` build settings into each target's generated Info.plist — no explicit Info.plist file needed for the main app.
+  - `CompositionRoot.makeRoot()` calls the helper and passes the `URL` to `RemoteProductsRepository(http:feedURL:)`.
+- **Cleanup:** delete `Sources/ReactiveShopKit/ReactiveShopKit.swift` (the `placeholder` enum from Step 1) once both `@main` files no longer reference it.
 
 At this step, `CatalogView`/`ProductDetailsView`/`CartView` exist as **placeholder Text views** so `RootView` compiles. The next three steps fill them in.
 
-Both `@main` entry points become:
+The `@main` entry point for the app clip target becomes:
 
 ```swift
 @main struct Reactive_ShopApp: App {
@@ -134,6 +139,26 @@ The Clip variant additionally:
 
 **Done when:** both apps launch, show three navigable placeholder screens, and routing works for `_XCAppClipURL=…/collections/all` and `_XCAppClipURL=…/product/unisex-hoodie` (verified by Xcode scheme arg).
 
+### ✅ Completed (2026-05-03)
+
+75 tests across 11 suites passing. Both Xcode schemes build clean.
+
+Files:
+- **Package created:** `Services/AppRouting.swift` (`AppDestination` enum + `AppRouting` protocol), `Services/AppRouter.swift` (`@Observable @MainActor final class`, `public var path` with `push`/`pop`/`popToRoot`, `push(.catalog)` clears to root), `Services/InvocationURLParser.swift` (pure URL → `AppDestination`, https-only after user tightening), `LoadState.swift` (generic 4-state enum at package root).
+- **Package tests created:** `Services/InvocationURLParserTests.swift` (16 tests), `Services/AppRouterTests.swift` (9 tests).
+- **Package deleted:** `Services/URLRouting.swift`, `Services/URLRouter.swift`, `Tests/Services/RouterTests.swift` (replaced by parser collapse).
+- **App Clip target created:** `App/Configuration.swift` (Bundle.main lookup, `preconditionFailure` on miss), `App/AppClipScreenFactory.swift` (struct + `EnvironmentKey` extension — env API requires non-`@Observable` value-types via classic key), `App/CompositionRoot.swift` (`live()` factory; Step 5 doesn't yet call `Configuration.productFeedURL()` because placeholder views take no deps), `App/RootView.swift` (`NavigationStack(path: $router.path)`, `navigationDestination(for: AppDestination.self)`, toolbar cart button, `.sheet`), three placeholder feature views.
+- **App Clip @main rewritten:** `Reactive_Shop_ClipApp.swift` — `@State private var root = CompositionRoot.live()`, env injection (`AppRouter`, `CartStore`, `\.screenFactory`), `.task` reads `_XCAppClipURL`, `.onContinueUserActivity` for runtime invocations.
+
+Deviations / refinements during implementation:
+- **`URLRouter` collapsed to `InvocationURLParser`** — original Step 5 had it as a stored observable; nobody read it. Replaced with a pure parser; AppRouter is now the single navigation source of truth.
+- **Package boundary tightened (Option B):** SwiftUI stays out of the package; all SwiftUI/composition code moved to the App Clip target. Package still imports zero SwiftUI (verified via grep).
+- **`AppRouter.path` is `public var`** (not `private(set)`) so SwiftUI's `@Bindable` can write through during back-gestures; `push`/`pop`/`popToRoot` remain the canonical mutation API.
+- **`AppClipScreenFactory` uses `EnvironmentKey`** pattern, not `@Environment(SomeType.self)` — it's a value-type struct, not an `@Observable` class.
+- **Configuration not yet called in `CompositionRoot.live()`** — placeholder views take no dependencies, so `repo` isn't constructed until Step 6. Info.plist read deferred along with it.
+- **Parser is https-only** (user tightening from initial http+https design).
+- **Main app left as-is** per the App-Clip-only narrowing of scope.
+
 ## Step 6 — Catalog screen
 
 - `CatalogViewModel(repository:)` — `state: LoadState<[Product]>`, `func load() async`, `func retry() async`.
@@ -145,6 +170,25 @@ Tests:
 - `CatalogViewModelTests` — happy path (loaded → array), error path (loaded → error), retry path (error → loading → loaded).
 
 **Done when:** Catalog screen renders the fixture's products end-to-end in the running app; tests pass.
+
+### ✅ Completed (2026-05-04)
+
+83 tests across 12 suites passing. Both Xcode schemes build. Manual: Clip launches into a 4-tile grid of fixture products, tap pushes Details placeholder, offline error renders correctly with manual retry.
+
+Files:
+- **Package created:** `Domain/Money+Formatting.swift` (`Money.formatted()` + `PriceRange.formatted()` with en-dash range — added to avoid duplication across Tile/Details/Cart), `Features/Catalog/CatalogViewModel.swift` (`@Observable @MainActor`, `state: LoadState<[Product]>`, strict-idle-gated `load()`, `retry()`).
+- **Package tests created:** `Helpers/InMemoryProductsRepository.swift` (call-counting stub), `Features/Catalog/CatalogViewModelTests.swift` (8 tests including idle-only-load guard and retry-from-error).
+- **App Clip target created:** `Features/Catalog/CatalogTile.swift` (square `AsyncImage` with `.easeOut(0.15)` transaction, out-of-stock saturation+capsule, combined accessibility element), `Features/Catalog/CatalogGrid.swift` (2-col `LazyVGrid` in `ScrollView`, tiles wrapped in `NavigationLink(value: AppDestination.productDetails(handle:))`), `Features/Catalog/CatalogSkeleton.swift` (4 redacted placeholder tiles, `.accessibilityHidden`), `Features/Catalog/CatalogEmptyState.swift` (`ContentUnavailableView`), `Features/Catalog/CatalogErrorState.swift` (`ContentUnavailableView` with per-case `Docs/05` copy).
+- **App Clip target replaced:** `Features/Catalog/CatalogView.swift` (orchestrator: switches on VM state, owns `.task`, owns `init(viewModel:)`).
+- **App Clip target modified:** `App/CompositionRoot.swift` — `URLSessionHTTPClient` + `RemoteProductsRepository(http:feedURL: Configuration.productFeedURL())` introduced; `makeCatalog` closure constructs `CatalogViewModel(repository: repo)` and `CatalogView(viewModel:)`; other factory closures unchanged.
+- **Xcode (User):** added `INFOPLIST_KEY_ProductFeedURL` build setting on Clip target; added the five new App-Clip files to target membership.
+
+Deviations / refinements during implementation:
+- **`Money+Formatting` added to package** (not in original Step 6 plan) — small extension, justified by avoiding duplicated currency formatting across three feature screens. `Decimal.formatted(.currency(code:))` keeps it locale-aware.
+- **`load()` is strictly idle-gated.** Originally allowed `.error → .loading` — tightened so `.task` re-firing while in error state can never auto-retry. `retry()` is the only path from `.error` back into a fetch (it explicitly resets to `.idle` first). Caught during review of the retry/backoff design discussion.
+- **Naming: `CatalogTile` not `CatalogRow`** — original Step 6 text said `CatalogRow`. Renamed to `CatalogTile` because the layout is a 2-col grid, not a list of rows. Layout decision was made in the Step 6 planning ("2-column LazyVGrid + borderless tiles" over single-column list).
+- **No auto-retry behavior.** Considered (auto-retry-once-on-transient, decorator-pattern `RetryingHTTPClient`). Decided against for take-home scope. Documented the decorator approach for future reference but did not implement.
+- **Empty-state retry button** is wired but won't fire on the supplied fixture (4 products always present). It exists for defensive completeness.
 
 ## Step 7 — Product Details screen
 
@@ -159,6 +203,24 @@ Tests:
 
 **Done when:** selecting Color=Black + Size=S on Unisex Hoodie disables Add-to-Cart (variant is `availableForSale=false`); selecting an available pair adds 1 to the cart.
 
+### ✅ Completed (2026-05-04)
+
+96 tests across 13 suites passing. Both Xcode schemes build. Manual: Catalog tap pushes Details for the chosen handle; carousel + info + chips render; F3 acceptance verified (Black/S → "Out of stock" disabled, available combos enable with price label); Add to Cart fires haptic; `_XCAppClipURL=…/product/does-not-exist` lands on the not-found error state with a Browse-catalog action.
+
+Files:
+- **Package created:** `Features/ProductDetails/ProductDetailsViewModel.swift` (`@Observable @MainActor`, `state: LoadState<Product>`, `selection: [String: String]`, computed `selectedVariant` via `Product.variant(matching:)`, `canAddToCart`, `addToCart() throws`, `lastAddedAt` for haptic trigger; strict-idle-gated `load()`).
+- **Package tests created:** `Helpers/InMemoryCartStore.swift` (call-counting `CartStoring` stub), `Features/ProductDetails/ProductDetailsViewModelTests.swift` (13 tests including F3 acceptance — Black/S resolves with `isAvailable == false`, `canAddToCart == false`, `addToCart` is no-op).
+- **App Clip target created:** `Features/ProductDetails/ImageCarousel.swift` (`TabView(.page)`, scrolls to `targetImageId` on change, reduce-motion fallback to instant set), `Features/ProductDetails/VariantPicker.swift` (capsule chip row, 44pt hit targets, accessibility labels with selection/out-of-stock state), `Features/ProductDetails/ProductDetailsSkeleton.swift` (shape-matching loading placeholder), `Features/ProductDetails/ProductDetailsErrorState.swift` (`.notFound` shows "Browse catalog"; others show "Try again").
+- **App Clip target replaced:** `Features/ProductDetails/ProductDetailsView.swift` (orchestrator: state switch, image carousel + info block + per-option `VariantPicker` + sticky bottom Add-to-Cart bar via `safeAreaInset`; reads `AppRouter` from env to wire the not-found "Browse catalog" action; `.sensoryFeedback(.success, trigger: viewModel.lastAddedAt)`).
+- **App Clip target modified:** `App/CompositionRoot.swift` — `makeDetails` closure now constructs `ProductDetailsViewModel(handle:repository:cart:)` capturing both `repo` and `cart`.
+- **Xcode (User):** added the four new App-Clip files to target membership.
+
+Deviations / refinements during implementation:
+- **`addToCart()` is no-op when variant is unavailable** — added an `isAvailable` guard inside the VM in addition to the view's `disabled(!canAddToCart)`. Defense in depth: VM never adds an unavailable variant even if a future caller bypasses the disabled state.
+- **`InMemoryCartStore` is a separate test stub** (not just `CartStore` directly) — keeps VM tests independent of the `@Observable` runtime; mirrors the `InMemoryProductsRepository` pattern.
+- **`ProductDetailsErrorState` takes both `onRetry` and `onBackToCatalog` closures** — keeps the state component dumb (no env access); orchestrator wires `popToRoot()` from `appRouter`.
+- **Carousel reduce-motion behavior** — falls back to instant page set instead of animated scroll when `accessibilityReduceMotion` is on (per `Docs/05`).
+
 ## Step 8 — Cart screen
 
 - `CartViewModel(cart:)` — exposes `lines`, `subtotal`, `total`, `itemCount`; `increment(_:)`, `decrement(_:)`, `remove(_:)`.
@@ -170,6 +232,24 @@ Tests:
 - `CartViewModelTests` — totals reflect store; increment/decrement/remove forward to store correctly.
 
 **Done when:** add 2 variants from Details, open Cart, see correct subtotal/count; stepping quantity updates totals live.
+
+### ✅ Completed (2026-05-04)
+
+103 tests across 14 suites passing. Both Xcode schemes build clean. Manual verification by user — cart functional end-to-end (empty state, add/edit/remove, totals, swipe-delete, badge, dismiss).
+
+Files:
+- **Package created:** `Features/Cart/CartViewModel.swift` (`@Observable @MainActor`, thin facade over `CartStoring`: computed `lines`/`subtotal`/`total`/`itemCount`/`isEmpty`; `setQuantity(_:for:)` and `remove(_:)` forwarding — `remove` calls `setQuantity(0, for:)`).
+- **Package tests created:** `Features/Cart/CartViewModelTests.swift` (7 tests covering initial state, line/totals propagation, setQuantity forwarding, setQuantity(0) removes, remove() routes through setQuantity).
+- **App Clip target created:** `Features/Cart/CartLineRow.swift` (60pt thumbnail, title/variant/unit/line-total stack, native `Stepper` 0–99 with binding-callback hookup, combined accessibility label on info block, stepper interactive), `Features/Cart/CartTotalsFooter.swift` (items/subtotal/total in `.regularMaterial` with top divider, total in `.title3.bold().monospacedDigit()`, combined accessibility), `Features/Cart/CartEmptyState.swift` (`ContentUnavailableView` with "Browse products" callback).
+- **App Clip target replaced:** `Features/Cart/CartView.swift` (orchestrator: `NavigationStack` wrap, `@Environment(\.dismiss)`, empty/list branch, `.onDelete` for swipe-delete, `safeAreaInset(edge: .bottom)` for totals, "Done" toolbar button).
+- **App Clip target modified:** `App/CompositionRoot.swift` — `makeCart` closure now constructs `CartView(viewModel: CartViewModel(cart: cart))`. `App/RootView.swift` — toolbar cart button extracted into `cartToolbarButton` computed view with red-capsule count badge overlay (visible when `itemCount > 0`); accessibility label includes count.
+
+Deviations / refinements during implementation:
+- **All-Claude implementation** per user direction ("Go ahead and implement all the code this time"). Previous steps had user owning orchestrator views; Step 8 broke from that pattern.
+- **Stepper minimum is 0**, not 1 — pressing `−` at quantity 1 removes the line via `setQuantity(0, for:)`. Single canonical mutation path; swipe-to-delete remains as a secondary affordance.
+- **Cart sheet wraps in its own `NavigationStack`** so the cart screen has its own toolbar context independent of the outer catalog/details stack.
+- **No new Money formatting** — reused `Money.formatted()` from Step 6 throughout (totals, line prices, line totals).
+- **Xcode auto-target-membership:** Xcode 16's synchronized folder behavior auto-included the new App Clip files without manual target-add. No user action needed beyond review.
 
 ## Step 9 — Accessibility & UX pass
 
@@ -184,6 +264,20 @@ Run the manual QA checklist from `Docs/05`:
 Fix anything that fails. Add missing `.accessibilityLabel` / `.accessibilityHint` / combined elements as identified.
 
 **Done when:** all five checks pass without obvious issues.
+
+### ✅ Completed (2026-05-04)
+
+Both Xcode schemes build clean. 103 package tests still green (no package changes). Manual verification by user — badge fully visible at all counts, cart button reachable from Details, Catalog cards have card styling, accessibility sweep clean.
+
+Files:
+- **App Clip target created:** `App/CartPresenter.swift` (`@Observable @MainActor` with `isShowingCart: Bool` — global sheet trigger so any screen can present cart), `App/CartToolbarButton.swift` (reusable toolbar button reading `CartStore` + `CartPresenter` from env; badge sits in fixed 28×28 frame with system-background ring; `99+` cap).
+- **App Clip target modified:** `App/CompositionRoot.swift` (owns `cartPresenter` handle), `Reactive_Shop_ClipApp.swift` (injects presenter into env), `App/RootView.swift` (replaced local `@State showingCart` with presenter binding; uses `CartToolbarButton`), `Features/ProductDetails/ProductDetailsView.swift` (adds `.toolbar { CartToolbarButton() }` so the cart is reachable from Details), `Features/Catalog/CatalogTile.swift` (card styling: `secondarySystemGroupedBackground`, 16pt corner radius, subtle shadow, image clipped to top half of card via outer `clipShape`).
+
+Deviations / refinements during implementation:
+- **Scope intentionally narrowed.** Per user direction — "minor cleanup and voiceover and normal accessibility, don't go overboard." Skipped Increase Contrast pass and exhaustive Dynamic Type matrix; kept VoiceOver sweep, XXL Dynamic Type spot-check, tap-target audit, Reduce Motion (already done in Step 7).
+- **Badge clipping fix** — root cause was `.offset(x:10, y:-8)` pushing the badge outside the toolbar item's clipping bounds. Replaced with a fixed-size container so the badge anchors inside the icon's frame; added a 1.5pt system-background ring for visual separation against the badge's red.
+- **Cart on Details via `CartPresenter`, not callback drilling** — user-chosen approach. One small `@Observable` env type beats threading bindings through ProductDetailsView. Scales if a future global sheet is added.
+- **No accessibility regressions found** — combined labels from Steps 6/7/8 already covered the screens; no new `.accessibilityLabel`/`.accessibilityHint` work needed beyond what the toolbar button now exposes ("Cart" / "Cart, N items").
 
 ## Step 10 — Documentation
 
